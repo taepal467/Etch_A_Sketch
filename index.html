@@ -9,7 +9,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container"></div>
+    <main class="main-container">
+        <div class="left-section">
+            <h1>Etch-A-Sketch</h1>
+
+            <div class="size-input">
+                <input class="input" type="text" name="text" id="text" 
+                placeholder="Enter size"onchange="changeSize(this.value)" value="16">
+                <button class="resize-btn btn">Resize</button>
+                <p id="error"></p>
+            </div>
+
+            <div class="container"></div>
+        </div>
+
+            <div class="buttons">
+                <button class="black-btn btn">Black</button>
+                <button class="rainbow rainbow-btn btn">Rainbow</button>
+                <button class="random-btn btn">Random:<span class="color-display"></span></button>
+                <button class="erase-btn btn">Erase</button>
+                <button class="reset-btn btn">Reset</button>
+            </div>
+    </main>
+
+    <footer>&copy;2022 Created by 
+        <a href="https://github.com/taepal467" target="_blank">taepal467</a>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
